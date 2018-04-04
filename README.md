@@ -1,2 +1,2 @@
-# wp-theme-blank
-Blank theme for WordPress
+# wp-theme-sene
+Theme sene WordPress
