@@ -1,8 +1,21 @@
 /*
-Theme Name: ---
-Author: Lucas Peixoto
+Theme Name: Sene
+Author: UpMarketing Digital - Jonilson / Wacrksson
 Version: 0.5
 */
+
+/* ------------------------------------- */
+/* TABLE OF CONTENTS
+/* -------------------------------------
+  1. FIXED AND PERMANENT STYLING
+  2. GENERAL
+    -2.1 SECTION TITLE
+  ------------------------------------- */
+
+
+/*==========================================================================
+  1. FIXED AND PERMANENT STYLING
+  ==========================================================================*/
 .alignleft {
   float: left;
   margin-right: 1.5em;
@@ -52,3 +65,166 @@ Version: 0.5
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/*==========================================================================
+  2. MORE STYLES
+  ==========================================================================*/
+
+body {
+font-family: 'Roboto', sans-serif !important;
+overflow-x: hidden;
+width: 100% !important;
+font-size: 14px;
+}
+body > section,
+body > footer {
+  max-width: 960px;
+  margin: auto;
+}
+
+.nav-background-color{
+  background-color: #0000FF !important;
+}
+
+.nav-font-color{
+  color: #FFFFFF;
+}
+
+.center{
+  width: 100%;
+}
+
+.nav-item a {
+  font-size: 16px;
+  color: #FFFFFF !important;
+}
+
+.nav-fonts{
+  color: #FFFFFF !important;
+}
+
+.navbar-text{
+  color: #FFFFFF !important;
+}
+
+.space{
+  margin: 5px 0;
+}
+
+.background-event{
+    background-color: #f0f0f0;
+}
+
+.primary-bar{
+  color: #000000;
+  border: solid 1px;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.secondary-bar{
+  color: #A9A9A9;
+  border: solid 1px;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.events{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.space-h5{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.date-event{
+  color: #0000FF;
+  font-size: 16px;
+}
+
+.event-description{
+  color: #000;
+  font-size: 16px;
+}
+
+.learn-more{
+  font-style: oblique;
+}
+
+.know-more{
+  text-decoration: none;
+  color: #000000 !important;
+}
+
+.groups-text-video{
+  font-size: 16px;
+  color: #000;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-bottom: 5px;
+}
+
+.text-secundario-video{
+  font-size: 14px;
+  font-style: italic;
+  color: #000;
+  padding-left: 35px;
+}
+
+.background-text-footer{
+  background-color: #0000FF !important;
+}
+
+.groups-text-footer{
+  font-size: 14px;
+  color: #ffffff;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-bottom: 25px;
+}
+
+.space-container-footer{
+  margin: 5px 0;
+  padding: 30px;
+}
+
+.background-footer{
+  background-color: #000080 !important;
+}
+
+.barra-footer{
+  color: #0000FF;
+  border: solid 10px;
+  margin-left: 0px;
+}
+.clique-aqui{
+  text-decoration: none;
+  color: #FFFFFF !important;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .logotipo {
+    max-height: 70px;
+  }
+
+  .date{
+    display: none;
+  }
+
+  .video-description{
+    display: none;
+  }
+
+}

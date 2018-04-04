@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="author" content="Lucas Peixoto" />
+        <meta name="author" content="UpMarketing Digital - Jonilson / Wacrksson" />
         <meta name="language" content="pt-br" />
         <meta name="keywords" content="" />
         <meta name="description" content="" />
@@ -29,10 +29,16 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <header class="header">
+
+        <section class="title">
             <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/topo.jpg" alt="SENE" class="logotipo"></a>
+            </div>
+        </section>
 
-            <?php get_template_part( 'templates/menu' ); ?>
+        <section class="section-navbar nav-background-color">
+            <div class="container">
+                <?php get_template_part( 'templates/menu' ); ?>    
+            </div>
+        </section>
 
-          	</div>
-        </header>
