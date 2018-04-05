@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light nav-background-color">
+<nav class="navbar navbar-expand-lg navbar-light nav-background-color">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,7 +26,10 @@
     </div>
     <div class="date">
         <span class="navbar-text">
-        20 de Março de 2018
+        <?php 
+            date_default_timezone_set('America/Fortaleza');
+            echo strftime('%d de %B de %Y', strtotime('today'));
+        ?>
         </span>
     </div>
 </nav>
