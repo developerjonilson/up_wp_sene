@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="conteudo">
+<!-- <section class="conteudo">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-7" style="padding-bottom: 5px;">
@@ -59,6 +59,6 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
 <?php get_footer(); ?>
