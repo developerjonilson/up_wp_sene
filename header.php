@@ -32,7 +32,7 @@
 
         <section class="title">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/topo.jpg" alt="SENE" class="logotipo"></a>
+                <a class="navbar-brand" href="#"><img src="<?= DIR; ?>/assets/img/topo.jpg" alt="SENE" class="logotipo"></a>
             </div>
         </section>
 

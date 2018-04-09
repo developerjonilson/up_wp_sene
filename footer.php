@@ -28,7 +28,7 @@
 
 	<footer class="text-center">
 		<div class="container background-footer space-container-footer groups-text-footer ">
-			COPYRIHT 2015 - EMPRESASENE.COM.BR - TOOS OS DIREITOS RESERVADOS
+			COPYRIHT 2018 - EMPRESASENE.COM.BR - TOOS OS DIREITOS RESERVADOS
 		</div>
 		<div class="container row barra-footer"></div>
 	</footer>

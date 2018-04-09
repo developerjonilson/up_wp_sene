@@ -5,10 +5,10 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto center">
         <li class="nav-item">
-            <a class="nav-link ml-4" href="#">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link ml-4" href="<?= home_url(); ?>">HOME <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link ml-4" href="#">EMPRESA</a>
+            <a class="nav-link ml-4" href="<?= home_url('empresa/'); ?>">EMPRESA</a>
         </li>
         <li class="nav-item">
             <a class="nav-link ml-4" href="#">CURSOS</a>
@@ -27,13 +27,8 @@
     <div class="date">
         <span class="navbar-text">
         <?php 
-            date_default_timezone_set('America/Fortaleza');
-            echo strftime('%d de %B de %Y', strtotime('today'));
+            the_time('d \d\e F \d\e Y')
         ?>
         </span>
     </div>
 </nav>
-
-<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <?php get_template_part('templates/menu'); ?>
-        </div> -->

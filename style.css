@@ -85,6 +85,11 @@ body > footer {
   margin: auto;
 }
 
+.custom-container {
+  max-width: 960px;
+  margin: auto;
+}
+
 .nav-background-color{
   background-color: #0000FF !important;
 }
