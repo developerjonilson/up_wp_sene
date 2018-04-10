@@ -1,5 +1,12 @@
-<?php get_header(); ?>
+<?php 
+    // template name: atendimento
 
+    get_header(); 
+?>
+
+    <section class="container">
+    
+    </section>
     <form action="#">
         <div class="form-group">
             <label for="name">Nome</label>
