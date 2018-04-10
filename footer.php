@@ -5,7 +5,7 @@
 					<div>
 					<h4 class="title-footer">Atendimento</h4>
 					Se desejar fazer a solicitação de certificado ou outros documentos,
-					<a href="#" class="font-bold clique-aqui"> clique aqui.</a>
+					<a href="<?= home_url('atendimento/'); ?>" class="font-bold clique-aqui"> clique aqui.</a>
 					</div>
 				</div>
 				<div class="col-12 col-md-4 groups-text-footer">

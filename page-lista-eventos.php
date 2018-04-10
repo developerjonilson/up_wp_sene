@@ -1,16 +1,18 @@
-<?php
-// template name: lista de cursos
+<?php 
+
+// template name: lista de eventos
+
 get_header();
- ?>
+?>
 
 <section class="container custom-container">
   <br>
 
-  <div class="cursos-list">
+  <div class="eventos-list">
 
     <?php
-        $cat = 'cursos';
-        $ppp = 5;
+        $cat = 'eventos';
+        $ppp = 8;
         $catID = (int) get_cat_ID($cat);
         $loop = new WP_Query( array( 'cat' => $catID, 'posts_per_page' => $ppp ) );
 
@@ -36,5 +38,5 @@ get_header();
 </section>
 
  <?php
- get_footer();
-  ?>
+get_footer();
+?>

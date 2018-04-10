@@ -121,6 +121,7 @@ body > footer {
 
 .background-event{
     background-color: #f0f0f0;
+    height: 350px;
 }
 
 .primary-bar{
@@ -156,7 +157,7 @@ body > footer {
 
 .event-description{
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .learn-more{
@@ -225,6 +226,12 @@ body > footer {
 
 .font-bold {
   font-weight: 700;
+}
+
+.line-divide-cursos {
+  color: #000;
+  background-color: #000;
+  height: 2px;
 }
 
 @media (max-width: 767px) {

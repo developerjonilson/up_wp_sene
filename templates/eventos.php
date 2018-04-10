@@ -7,7 +7,7 @@
 
     <?php 
         
-        $args = array('cat' => get_cat_ID( 'eventos' ), 'post_per_page' => 4 );
+        $args = array('cat' => get_cat_ID( 'eventos' ), 'post_per_page' => 3 );
         $loop = new WP_Query($args);
         
         if ($loop->have_posts()) {
@@ -26,7 +26,7 @@
         <?php
             }
         } else {
-            echo "<h3> Nenhum evento encontrado! </h3>";
+            echo "<h4> Nenhum evento encontrado! </h4>";
         }
     
     ?>
@@ -35,5 +35,5 @@
         <span class="primary-bar"></span>
     </div>
     <h5 class="d-flex justify-content-end learn-more space-h5">
-        <a href="http://upmarketingdigital.com.br/" class="know-more">SAIBA MAIS...</h5></a>
+        <a href="<?= home_url('eventos/'); ?>" class="know-more">SAIBA MAIS...</h5></a>
     </div>
