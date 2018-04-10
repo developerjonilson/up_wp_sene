@@ -209,6 +209,11 @@ body > footer {
   border: solid 10px;
   margin-left: 0px;
 }
+
+.title-footer{
+  font-style: italic;
+}
+
 .clique-aqui{
   text-decoration: none;
   color: #FFFFFF !important;

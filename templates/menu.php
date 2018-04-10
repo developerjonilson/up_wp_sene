@@ -11,16 +11,16 @@
             <a class="nav-link ml-4" href="<?= home_url('empresa/'); ?>">EMPRESA</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link ml-4" href="#">CURSOS</a>
+            <a class="nav-link ml-4" href="<?= home_url('cursos/'); ?>">CURSOS</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link ml-4" href="#">GALERIA</a>
+            <a class="nav-link ml-4" href="<?= home_url('galeria/'); ?>">GALERIA</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link ml-4" href="#">ATENDIMENTO</a>
+            <a class="nav-link ml-4" href="<?= home_url('atendimento/'); ?>">ATENDIMENTO</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link ml-4" href="#">BLOG</a>
+            <a class="nav-link ml-4" href="<?= home_url('blog/'); ?>">BLOG</a>
         </li>
         </ul>
     </div>
