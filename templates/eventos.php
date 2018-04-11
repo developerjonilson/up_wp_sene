@@ -7,8 +7,11 @@
 
     <?php 
         
-        $args = array('cat' => get_cat_ID( 'eventos' ), 'post_per_page' => 3 );
-        $loop = new WP_Query($args);
+        $cat = 'eventos';
+        $ppp = 3;
+        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+        $catID = (int) get_cat_ID($cat);
+        $loop = new WP_Query( array( 'cat' => $catID, 'posts_per_page' => $ppp, 'paged' => $paged ) );
         
         if ($loop->have_posts()) {
             
@@ -17,8 +20,8 @@
 
                 <a href="<?= the_permalink(); ?>" class="events">
                     <span class="date-event"><?php the_field('data_do_evento'); ?></span>
-                    <span class="event-description"> - <?php the_field('local_do_evento'); ?> </span><br>
-                    <span class="event-description"><?php the_excerpt(); ?></span><br>
+                    <span class="event-description"> - <?php the_field('local_do_evento'); ?> </span>
+                    <span class="event-description"><?php the_excerpt(); ?></span>
                 </a>
                 <div class="row">
                     <span class="secondary-bar"></span>

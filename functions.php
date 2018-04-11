@@ -7,12 +7,17 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'bootstrap', DIR . '/assets/bootstrap/css/bootstrap.min.css');
 	wp_enqueue_style( 'slick', DIR . '/assets/slick/slick.css');
 	wp_enqueue_style( 'slick-theme', DIR . '/assets/slick/slick-theme.css');
+	wp_enqueue_style( 'simple-calendar', DIR . '/assets/css/jsCalendar.min.css');
 	wp_enqueue_script( 'font-awesome5', 'https://use.fontawesome.com/releases/v5.0.8/js/all.js');
+
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'bootstrap-js', DIR . '/assets/bootstrap/js/bootstrap.min.js', array ( 'jquery' ));
 	wp_enqueue_script( 'slick-js', DIR . '/assets/slick/slick.min.js', array ( 'jquery' ));
-	wp_enqueue_script( 'theme-js', DIR . '/assets/js/theme.js', array ( 'jquery' ));
+	wp_enqueue_script( 'simple-calendar-js', DIR . '/assets/js/jsCalendar.min.js', array ( 'jquery' ));
+	wp_enqueue_script( 'simple-calendar-pt-js', DIR . '/assets/js/jsCalendar.lang.pt.js', array ( 'jquery' ));
+
+	wp_enqueue_script( 'theme-js', DIR . '/assets/js/theme.js', array ( 'jquery', 'simple-calendar-js' ));
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
@@ -36,7 +41,6 @@ function wp_pagination( $query=null, $wpcpn_posts=null )
     $query = $query ? $query : $wp_query;
     $big = 999999999;
     $max_num_pages = $query->max_num_pages;
-
     $paginate = paginate_links(
         array(
             'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
@@ -50,9 +54,13 @@ function wp_pagination( $query=null, $wpcpn_posts=null )
     );
     if ( $max_num_pages > 1 && $paginate ) {
         echo '<nav aria-label="Page navigation example">';
-        echo '<ul class="pagination">';
+        echo '<ul class="pagination justify-content-center">';
         foreach ( $paginate as $page ) {
-            echo '<li class="page-item">' . $page . '</li>';
+		$active = strpos($page, 'current') !== false ? 'active' : '';
+		$page = str_replace('span', 'a', $page);
+		$page = str_replace('page-numbers', 'page-link', $page);
+		$page = str_replace('current', '', $page);
+		echo '<li class="page-item '. $active .'">' . $page . '</li>';
         }
         echo '</ul>';
         echo '</nav>';

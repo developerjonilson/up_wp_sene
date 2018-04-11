@@ -18,9 +18,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-5 groups-text-footer">
-					<div>
-						<h4 class="title-footer">Calendário</h4><br>
-					</div>
+					<div class="auto-jsCalendar text-center" data-language="pt"></div>
 				</div>
 			</div>
 		</div>

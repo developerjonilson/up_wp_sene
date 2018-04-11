@@ -1,19 +1,15 @@
-<?php
-// template name: lista de cursos
-get_header();
- ?>
+<?php get_header(); ?>
 
-<section class="container custom-container">
-  <br>
+    <section class="container custom-container">
+    <br>
 
-  <div class="cursos-list">
+    <div class="blog-list">
 
-    <?php
-        $cat = 'cursos';
-        $ppp = 5;
+        <?php
+        $cat = 'blog';
         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
         $catID = (int) get_cat_ID($cat);
-        $loop = new WP_Query( array( 'cat' => $catID, 'posts_per_page' => $ppp, 'paged' => $paged ) );
+        $loop = new WP_Query( array( 'cat' => $catID, 'paged' => $paged ) );
 
     
         if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -26,15 +22,13 @@ get_header();
             <hr class="line-divide-cursos">
             <br>
 		<?php endwhile; else : ?>
-			<p>Nenhum cursos encontrado!</p>
+			<p>Nenhuma postagem encontrada!</p>
 		<?php endif; ?>
 		<?php wp_pagination($loop); ?>
 
-  </div>
+    </div>
 
-  <br>
-</section>
+    <br>
+    </section>
 
- <?php
- get_footer();
-  ?>
+<?php get_footer(); ?>

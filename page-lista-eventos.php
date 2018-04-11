@@ -12,7 +12,7 @@ get_header();
 
     <?php
         $cat = 'eventos';
-        $ppp = 8;
+        $ppp = 5;
         $catID = (int) get_cat_ID($cat);
         $loop = new WP_Query( array( 'cat' => $catID, 'posts_per_page' => $ppp ) );
 
@@ -29,8 +29,7 @@ get_header();
 		<?php endwhile; else : ?>
 			<p>Nenhum cursos encontrado!</p>
 		<?php endif; ?>
-		<?php wp_pagination(); ?>
-        <!-- #falta a paginação -->
+		<?php wp_pagination($loop); ?>
 
   </div>
 
